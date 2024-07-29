@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Metadados da Página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo-BariBadu</title>
+
+    <!-- Links de Estilos Externos -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Todo-BariBadu</h1>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Instrução para o Usuário -->
+        <p>Escreva abaixo uma tarefa para adicionar à lista:</p>
+        
+        <!-- Contêiner de Nova Tarefa -->
+        <div class="tarefas-container">
+            <input type="text" placeholder=" Fazer yoga de manhã" id="nova_tarefa">
+            <button id="adicionar_tarefa" type="submit"> + </button>
+        </div>
+
+        <!-- Mensagem de Erro -->
+        <div id="mensagem_erro" class="mensagem-erro"></div>
+
+        <!-- Lista de Tarefas -->
+        <ul class="tarefas-list" id="tarefas_lista">
+            <li class="tarefas-titulo" contenteditable="true">Nome da Lista</li>
+        </ul>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2019 Award3d</p>
+    </footer>
+
+    <!-- Script Externo -->
+    <script src="script.js"></script>
+</body>
+</html>

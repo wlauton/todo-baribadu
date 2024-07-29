@@ -1,0 +1,140 @@
+/* Importação de Fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Cedarville+Cursive&family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Cedarville+Cursive&family=Gochi+Hand&family=Poetsen+One&display=swap');
+
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Estilo do Rodapé */
+footer {
+    display: flex;
+    background-color: #333;
+    color: #f0f0f0;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    border-top: 2px solid #1cebb7;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo do Cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1px 0;
+    text-align: center;
+    font-family: "Gochi Hand", cursive;
+    font-size: 22pt;
+    border-bottom: 5px solid #1cebb7;
+}
+
+/* Estilo do Conteúdo Principal */
+main {
+    padding: 20px;
+}
+
+main p {
+    padding-bottom: 1vh;
+}
+
+/* Estilo do Contêiner de Tarefas */
+.tarefas-container {
+    display: flex;
+    padding: auto;
+}
+
+/* Estilo do Campo de Entrada de Nova Tarefa */
+#nova_tarefa {
+    background-color: rgb(187, 255, 235);
+    width: 100%;
+    height: 5.2vh;
+    font-size: 18pt;
+    font-family: monospace;
+    border: none;
+    border-bottom: 2px solid #1cebb7;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+/* Estilo do Botão de Adicionar Tarefa */
+#adicionar_tarefa {
+    height: 5.6vh;
+    font-size: 18pt;
+    font-weight: bold;
+    background-color: aquamarine;
+    border: none;
+    border-bottom: 2px solid #1cebb7;
+    border-radius: 5px;
+}
+
+#adicionar_tarefa:hover {
+    background-color: rgb(184, 243, 223);
+    border-top: 2px solid #1cebb7;
+}
+
+/* Estilo do Título da Lista de Tarefas */
+.tarefas-titulo {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(210, 255, 255);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 24pt;
+    font-family: "Gochi Hand", cursive;
+}
+
+/* Estilo da Lista de Tarefas */
+.tarefas-list {
+    background-color: #f0ffff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilo de Cada Tarefa */
+.tarefa {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dashed rgb(47, 43, 255);
+    justify-content: space-between;
+    padding: 25px 10px;
+    position: relative;
+    font-size: 16pt;
+    font-family: "Gochi Hand", cursive;
+}
+
+/* Estilo dos Ícones de Lixeira e Concluído */
+.tarefa .fa-trash, .tarefa .fa-calendar-check-o {
+    display: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.tarefa:hover .fa-trash, .tarefa:hover .fa-calendar-check-o {
+    display: inline;
+}
+
+/* Estilo do Conteúdo da Tarefa */
+.tarefa-conteudo {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+/* Estilo de Tarefa Concluída */
+.tarefa-concluida {
+    background-color: #85faa0;
+}
+
+/* Estilo da Mensagem de Erro */
+.mensagem-erro {
+    color: red;
+    margin-top: 10px;
+}

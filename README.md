@@ -25,6 +25,9 @@ Todo-BariBadu é uma aplicação de lista de tarefas simples e eficiente, desenv
    git clone https://github.com/wlauton/todo-baribadu.git
    ```
 2. Navegue até o diretório do projeto:
+   ```bash
+   cd todo-baribadu
+   ```
 3. Abra o arquivo `index.html` no seu navegador preferido.
 
 ## Contribuição 🤝
